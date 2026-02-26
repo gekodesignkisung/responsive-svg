@@ -187,13 +187,12 @@
 
   <h1>Responsive SVG Icon</h1>
   <p class="subtitle">
-    단 하나의 파일 <code>icon-logo-rs.svg</code>에 CSS <code>@media</code> 쿼리를 넣어
-    렌더링 크기에 따라 세 가지 아이콘 버전을 자동으로 전환합니다.
+    하나의 SVG 파일을 렌더링 크기에 따라 다른 디테일의 아이콘으로 출력.
   </p>
 
   <!-- ── 1. 고정 크기 비교 ──────────────────────────────── -->
   <section>
-    <h2>고정 크기 비교 — 같은 파일, 다른 width</h2>
+
     <div class="card-grid">
 
       <!-- 24 px → small -->
@@ -202,13 +201,13 @@
           <object
             type="image/svg+xml"
             data="./public/icon-logo-rs.svg"
-            width="24" height="24"
-            aria-label="아이콘 24px"
+            width="16" height="16"
+            aria-label="아이콘 16px"
           ></object>
         </div>
         <div class="card-label">
-          <div class="size-text">24 × 24</div>
-          <div class="rule-text">≤ 32px</div>
+          <div class="size-text">16 × 16</div>
+         
           <span class="variant-badge badge-sm">Small 버전</span>
         </div>
       </div>
@@ -225,7 +224,7 @@
         </div>
         <div class="card-label">
           <div class="size-text">32 × 32</div>
-          <div class="rule-text">≤ 32px (경계)</div>
+         
           <span class="variant-badge badge-sm">Small 버전</span>
         </div>
       </div>
@@ -242,7 +241,7 @@
         </div>
         <div class="card-label">
           <div class="size-text">48 × 48</div>
-          <div class="rule-text">33px – 64px</div>
+        
           <span class="variant-badge badge-md">Medium 버전</span>
         </div>
       </div>
@@ -259,7 +258,7 @@
         </div>
         <div class="card-label">
           <div class="size-text">64 × 64</div>
-          <div class="rule-text">33px – 64px (경계)</div>
+         
           <span class="variant-badge badge-md">Medium 버전</span>
         </div>
       </div>
@@ -276,7 +275,7 @@
         </div>
         <div class="card-label">
           <div class="size-text">96 × 96</div>
-          <div class="rule-text">≥ 65px</div>
+          
           <span class="variant-badge badge-lg">Large 버전</span>
         </div>
       </div>
@@ -293,7 +292,7 @@
         </div>
         <div class="card-label">
           <div class="size-text">160 × 160</div>
-          <div class="rule-text">≥ 65px</div>
+          
           <span class="variant-badge badge-lg">Large 버전</span>
         </div>
       </div>
