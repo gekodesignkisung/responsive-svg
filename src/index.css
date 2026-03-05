@@ -81,9 +81,10 @@ section { margin-bottom: 56px; }
   font-weight: 600;
   letter-spacing: .04em;
 }
-.badge-sm { background: #bee3f8; color: #2a69ac; }
-.badge-md { background: #c6f6d5; color: #276749; }
-.badge-lg { background: #feebc8; color: #975a16; }
+.badge-step1 { background: #bee3f8; color: #2a69ac; }
+.badge-step2 { background: #c6f6d5; color: #276749; }
+.badge-step3 { background: #feebc8; color: #975a16; }
+.badge-step4 { background: #fed7e2; color: #97266d; }
 
 /* ── 슬라이더 ── */
 .slider-section {

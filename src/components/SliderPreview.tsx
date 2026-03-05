@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-type BadgeVariant = 'sm' | 'md' | 'lg'
+type BadgeVariant = 'step1' | 'step2' | 'step3' | 'step4'
 
 interface BadgeInfo {
   variant: BadgeVariant
@@ -8,9 +8,10 @@ interface BadgeInfo {
 }
 
 function getBadge(size: number): BadgeInfo {
-  if (size <= 32) return { variant: 'sm', label: 'Small 버전 (≤ 32px)' }
-  if (size <= 64) return { variant: 'md', label: 'Medium 버전 (33–64px)' }
-  return { variant: 'lg', label: 'Large 버전 (≥ 65px)' }
+  if (size <= 32) return { variant: 'step1', label: '단계 1 (≤ 32px)' }
+  if (size <= 64) return { variant: 'step2', label: '단계 2 (33–64px)' }
+  if (size <= 96) return { variant: 'step3', label: '단계 3 (65–96px)' }
+  return { variant: 'step4', label: '단계 4 (≥ 97px)' }
 }
 
 export default function SliderPreview() {
@@ -38,13 +39,23 @@ export default function SliderPreview() {
         <div className="live-preview">
           <div className="icon-bg">
             <object
+              key={size}
               type="image/svg+xml"
-              data="/icon-logo-rs.svg"
+              data={`/icon-logo-4-rs.svg?${size}`}
               width={size}
               height={size}
               aria-label="아이콘 (크기 조절)"
               style={{ display: 'block', transition: 'width .12s, height .12s' }}
-            />
+            >
+              <img
+                key={size}
+                src={`/icon-logo-4-rs.svg?${size}`}
+                width={size}
+                height={size}
+                alt="아이콘 (크기 조절)"
+                style={{ display: 'block', transition: 'width .12s, height .12s' }}
+              />
+            </object>
           </div>
           <span className={`variant-badge badge-${badge.variant}`}>
             {badge.label}
