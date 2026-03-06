@@ -4,8 +4,10 @@ import SliderPreview from './components/SliderPreview'
 const CARDS = [
   { size: 16,  badge: 'step1' as const, label: '단계 1 (≤ 16px)' },
   { size: 24,  badge: 'step2' as const, label: '단계 2 (17–32px)' },
+  { size: 32,  badge: 'step2' as const, label: '단계 2 (17–32px)' },
   { size: 48,  badge: 'step3' as const, label: '단계 3 (33–64px)' },
-  { size: 64,  badge: 'step4' as const, label: '단계 4 (≥ 65px)' },
+  { size: 64,  badge: 'step3' as const, label: '단계 3 (33–64px)' },
+  { size: 128, badge: 'step4' as const, label: '단계 4 (≥ 65px)' },
   { size: 192, badge: 'step4' as const, label: '단계 4 (≥ 65px)' },
 ]
 
