@@ -1,6 +1,5 @@
 import IconCard from './components/IconCard'
 import SliderPreview from './components/SliderPreview'
-import FourIcons from './components/FourIcons'
 
 const CARDS = [
   { size: 16,  badge: 'step1' as const, label: '단계 1 (≤ 16px)' },

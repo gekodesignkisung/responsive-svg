@@ -26,8 +26,8 @@ export default function SliderPreview() {
           <input
             id="size-slider"
             type="range"
-            min={16}
-            max={200}
+            min={12}
+            max={256}
             step={1}
             value={size}
             onChange={(e) => setSize(Number(e.target.value))}
