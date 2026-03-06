@@ -8,12 +8,11 @@ interface BadgeInfo {
 }
 
 function getBadge(size: number): BadgeInfo {
-  if (size <= 32) return { variant: 'step1', label: '단계 1 (≤ 32px)' }
-  if (size <= 64) return { variant: 'step2', label: '단계 2 (33–64px)' }
-  if (size <= 96) return { variant: 'step3', label: '단계 3 (65–96px)' }
-  return { variant: 'step4', label: '단계 4 (≥ 97px)' }
+  if (size <= 16) return { variant: 'step1', label: '단계 1 (≤ 16px)' }
+  if (size <= 32) return { variant: 'step2', label: '단계 2 (17–32px)' }
+  if (size <= 64) return { variant: 'step3', label: '단계 3 (33–64px)' }
+  return { variant: 'step4', label: '단계 4 (≥ 65px)' }
 }
-
 export default function SliderPreview() {
   const [size, setSize] = useState(48)
   const badge = getBadge(size)
