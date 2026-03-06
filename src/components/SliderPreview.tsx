@@ -38,21 +38,19 @@ export default function SliderPreview() {
         <div className="live-preview">
           <div className="icon-bg">
             <object
-              key={size}
               type="image/svg+xml"
-              data={`/icon-logo-4-rs.svg?${size}`}
+              data="/icon-logo-4-rs.svg"
               width={size}
               height={size}
               aria-label="아이콘 (크기 조절)"
-              style={{ display: 'block', transition: 'width .12s, height .12s' }}
+              style={{ display: 'block' }}
             >
               <img
-                key={size}
-                src={`/icon-logo-4-rs.svg?${size}`}
+                src="/icon-logo-4-rs.svg"
                 width={size}
                 height={size}
                 alt="아이콘 (크기 조절)"
-                style={{ display: 'block', transition: 'width .12s, height .12s' }}
+                style={{ display: 'block' }}
               />
             </object>
           </div>

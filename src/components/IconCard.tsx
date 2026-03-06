@@ -11,18 +11,15 @@ export default function IconCard({ size, badge, label }: Props) {
     <div className="card">
       <div className="icon-wrap">
         <object
-          key={size}
           type="image/svg+xml"
-          data={`/icon-logo-4-rs.svg?${size}`}
+          data="/icon-logo-4-rs.svg"
           width={size}
           height={size}
           aria-label={`아이콘 ${size}px`}
           style={{ display: 'block', flexShrink: 0 }}
         >
-          {/* object가 실패하면 이미지 구성 */}
           <img
-            key={size}
-            src={`/icon-logo-4-rs.svg?${size}`}
+            src="/icon-logo-4-rs.svg"
             width={size}
             height={size}
             alt={`아이콘 ${size}px`}
